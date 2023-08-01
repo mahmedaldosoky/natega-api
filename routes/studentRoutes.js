@@ -6,7 +6,7 @@ const app = express.Router();
 
 app.get("/", async (req, res) => {
   try {
-    const { arabic_name } = req.body;
+    const { arabic_name } = req.query;
 
     if (!arabic_name) {
       return res
